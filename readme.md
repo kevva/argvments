@@ -55,6 +55,13 @@ Type: `Array`
 
 In addition to the types supplied by `minimist` (`boolean` and `string`) you can also choose to treat your arguments as `any`. This will treat `--rainbow` as `true` and `--rainbow=foo` as `foo`.
 
+```js
+const argvments = require('argvments');
+
+const argv = argvments(process.argv.slice(2), {any: ['rainbow']});
+console.log(argv.flags.rainbow);
+```
+
 ```
 $ ./unicorn.js --rainbow
 //=> true
@@ -64,7 +71,7 @@ $ ./unicorn.js --rainbow=foo
 
 $ ./unicorn.js --rainbow foo
 //=> true
-````
+```
 
 ##### inferType
 
