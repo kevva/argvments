@@ -1,0 +1,40 @@
+{
+	"name": "argvments",
+	"version": "0.0.0",
+	"description": "Parse command line arguments",
+	"license": "MIT",
+	"repository": "kevva/argvments",
+	"author": {
+		"name": "Kevin Mårtensson",
+		"email": "kevinmartensson@gmail.com",
+		"url": "github.com/kevva"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"arguments",
+		"argv",
+		"boolean",
+		"cli",
+		"cli-app",
+		"flags",
+		"parse",
+		"string"
+	],
+	"dependencies": {
+		"camelcase-keys": "^4.1.0",
+		"decamelize-keys": "^1.1.0",
+		"minimist": "^1.2.0"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"xo": "*"
+	}
+}
