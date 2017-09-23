@@ -1,6 +1,6 @@
 {
 	"name": "argvments",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Parse command line arguments",
 	"license": "MIT",
 	"repository": "kevva/argvments",
