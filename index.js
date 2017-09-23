@@ -32,10 +32,8 @@ module.exports = (args, opts) => {
 	}
 
 	if (opts.any.length > 0) {
-		for (const x of opts.any) {
-			opts.boolean.push(x);
-			opts.string.push(x);
-		}
+		opts.boolean = opts.boolean.concat(opts.any);
+		opts.string = opts.string.concat(opts.any);
 	}
 
 	const parsed = parse(args, opts);
